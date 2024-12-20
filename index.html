@@ -13,107 +13,100 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Seção Principal (Hero) -->
     <section class="hero d-flex justify-content-start align-items-center">
         <div class="container">
             <div class="hero-header d-flex align-items-center gap-4 py-1">
                 <nav class="navbar">
                     <ul class="navbar-nav d-flex flex-row gap-4">
                         <li class="nav-item"><a class="nav-link" href="#sobre-nos">Sobre Nós</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nossos-servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nossas-torres">Nossas Torres</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                     </ul>
                 </nav>
-                <h1 class="logo" style="margin-left: auto;">
+                <h1 class="logo ml-auto">
                     <img src="img/logo sem fundo letra branca.png" alt="Logo">
                 </h1>
             </div>
             <div class="hero-text">
-                <h2>Conectando Sua Empresa com Segurança e Eficiência.</h2>
-                <p class="lead">Disponibilizamos <span class="torres-highlight">torres</span> de telecomunicação para locação, ideais para instalação de antenas e expansão de redes. Nossas torres estão posicionadas em terrenos estratégicos, cada um com uma estrutura completa, incluindo uma casinha de suporte para equipamentos e necessidades operacionais. Essa infraestrutura garante cobertura ideal, segurança e eficiência para quem busca expandir suas operações de telecomunicação com total suporte.</p>
-                <a href="https://api.whatsapp.com/send?phone=5519991151223&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" class="btn cta-button">Solicite um Orçamento!</a>
+                <h2>Conectando Sua Empresa com Segurança e Eficiência</h2>
+                <p class="lead">Disponibilizamos <span class="torres-highlight">torres</span> estrategicamente posicionadas, ideais para atender suas demandas de telecomunicação com qualidade.</p>
+                <a href="https://api.whatsapp.com/send?phone=5519991151223" class="btn cta-button">Solicite um Orçamento!</a>
             </div>
         </div>
     </section>
     
- <!-- Seção Nossas torres -->
- <section id="nossas-torres" class="nossas-torres py-1 bg-light">
-    <div class="container">
-        <h2 class="display-4 mb-4">Nossas Torres</h2>
-        <p>Oferecemos torres de telecomunicação estrategicamente localizadas e prontas para instalação de antenas e equipamentos de transmissão, garantindo ampla cobertura e segurança.</p>
-        
-        <div class="row justify-content-center">
-            <!-- Torre 1 -->
-            <div class="col-lg-6 torre-item">
-                <img src="img/img1torres.jpg" alt="Torre de telecomunicação em Campinas-SP" class="img-fluid">
-                <div class="torre-item-content">
-                    <h3>Torre em Campinas-SP</h3>
-                    <p>Localizada em Campinas-SP, essa torre oferece excelente cobertura para todo o interior de São Paulo e capital, sendo ideal para quem busca expandir suas redes de comunicação com segurança e eficiência.</p>
-                </div>
-            </div>
-
-            <!-- Torre 2 -->
-            <div class="col-lg-6 torre-item">
-                <img src="img/img2torre.jpg" alt="Torre de telecomunicação na Serra do Japi" class="img-fluid">
-                <div class="torre-item-content">
-                    <h3>Torre na Serra do Japi</h3>
-                    <p>Localizada no ponto mais alto da Serra do Japi, entre Jundiaí e Cabreúva-SP, esta torre oferece visada privilegiada para o interior e a capital, com uma estrutura cercada e acesso 24 horas.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-    <section id="sobre-nos" class="py-5 bg-light bg-custom text-dark">
+    <section id="nossas-torres" class="nossas-torres py-0">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="display-4 mb-4">Sobre Nós</h2>
-                    <p class="lead mb-5">Somos especializados na locação de torres de telecomunicação, oferecendo infraestrutura estratégica para empresas que buscam expandir suas redes de comunicação com qualidade e segurança. Localizadas em pontos privilegiados de São Paulo, nossas torres contam com uma estrutura completa para suportar instalações de antenas e equipamentos de transmissão, garantindo cobertura ideal e acesso 24 horas. Com uma equipe dedicada e infraestrutura confiável, estamos comprometidos em oferecer soluções que atendam às necessidades específicas de cada cliente.</p>
-                    <a href="#contato" class="btn btn-outline-primary btn-lg">Entre em Contato</a>
+            <h2 class="display-4 text-center mb-5">Nossas Torres</h2>
+            <!-- Torre 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="img/img1torres.jpg" alt="Torre em Campinas" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="torre-item-content text-start">
+                        <h3 class="mb-4">Torre em Campinas-SP</h3>
+                        <p class="lead">Localização privilegiada no interior de São Paulo, garantindo ampla cobertura e acesso 24h para suas operações de telecomunicação.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Torre 2 -->
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="img/img2torre.jpg" alt="Torre na Serra do Japi" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="torre-item-content text-start">
+                        <h3 class="mb-4">Torre na Serra do Japi</h3>
+                        <p class="lead">Com visada estratégica, essa torre é ideal para operações que exigem alta performance e estabilidade, localizada no ponto mais alto da região.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-<section id="contato">
-    <h2>Entre em Contato</h2>
-    <form name="contact" method="POST" data-netlify="true">
-        
-        <p>
-            <label>Nome <input type="text" name="name" /></label>
-        </p>
-        <p>
-            <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-            <button type="submit">Enviar</button>
-        </p>
-    </form>
-</section>
-
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-    <!-- Seção de Mapa e Footer -->
-    <section id="mapa-e-footer" class="d-flex justify-content-center align-items-center py-1 bg-dark text-white">
-        <div class="container text-center d-flex flex-column align-items-center">
-            <!-- Footer com redes sociais e copyright -->
-            <footer class="footer bg-dark text-white text-center py-2">
-                <div class="container">
+    <section id="sobre-nos" class="py-8">
+        <h2>Sobre Nós</h2>
+        <div class="content">
+            <p>Somos especialistas em infraestrutura para telecomunicações, com torres localizadas em pontos estratégicos para atender a todas as suas necessidades de conectividade e expansão de redes.</p>
                     </div>
-                    <p class="mt-2 mb-0">&copy; 2024 <a href="mailto:aniger.jr@gmail.com?subject=Assunto%20do%20Email&body=Olá,%20escreva%20sua%20mensagem%20aqui!">Enviar email para NexaCore</a>. Todos os direitos reservados.</p>
+    </section>
+    
+    
+    
+    <section id="contato" class="py-0">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Entre em Contato</h2>
+            <form name="contact" method="POST" data-netlify="true" class="form mx-auto">
+                <input type="hidden" name="form-name" value="contact">
+                <div class="form-group">
+                    <label for="name">Seu Nome:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Digite seu nome" required>
                 </div>
-            </footer>
+                <div class="form-group">
+                    <label for="email">Seu Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
         </div>
     </section>
+    
+    <footer id="footer" class="py-1">
+        <div class="container text-center">
+            <h3 class="footer-title mb-3">Entre em Contato</h3>
+            <ul class="list-unstyled">
+                <li class="mb-2"><strong>Telefone:</strong> <a href="tel:+5519991151223">+55 19 99115-1223</a></li>
+                <li class="mb-2"><strong>Email:</strong> <a href="mailto:carossig2009@gmail.com">carossig2009@gmail.com</a></li>
+            </ul>
+            <p class="mt-4">&copy; 2024 Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+    
 
     <!-- Botão Flutuante do WhatsApp -->
     <a href="https://api.whatsapp.com/send?phone=5519991151223&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" class="whatsapp-float" target="_blank">

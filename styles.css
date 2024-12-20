@@ -72,6 +72,36 @@ body {
     margin-top: -2.1rem;
     
 }
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.cta-button {
+    background: #fc9a2b;
+    color: #333;
+    padding: 6rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.cta-button:hover {
+    background: #c97b21;
+}
 
 .navbar {
     display: flex;
@@ -115,80 +145,47 @@ body {
     gap: 1.5rem;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    color: #fff;
-}
-
-.hero p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #fff;
-}
-
-.cta-button {
-    background: #fc9a2b;
-    color: #333;
-    padding: 6rem 2rem;
-    border-radius: 5px;
-    font-weight: 600;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    
-}
-
-.cta-button:hover {
-    background: #c97b21;
-}
 #nossas-torres {
-    padding: 3rem 0;
+    padding: 0%;
+    margin: 0 auto; /* Remove espaço extra acima e centraliza a seção */
+    max-width: 1200px; /* Limita a largura máxima */
     background-color: #f8f9fa;
 }
 
 #nossas-torres h2 {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-#nossas-torres p {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.torre-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    gap: 2rem;
-}
-
-.torre-item img {
-    width: 200px; /* Tamanho da imagem em formato quadrado */
-    height: 200px;
-    object-fit: cover; /* Garante que a imagem preencha o quadrado */
-    border-radius: 8px; /* Bordas levemente arredondadas */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar */
-}
-
-.torre-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
     color: #333;
 }
 
-.torre-item p {
-    margin: 0;
-    color: #555;
+.torre-item-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
 }
 
-.torre-item-content {
-    max-width: 500px;
+.torre-item-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
 }
+
+.img-fluid {
+    width: 100%;               /* Garante que a imagem ocupe a largura disponível */
+    height: 450px;             /* Define uma altura fixa para todas as imagens */
+    object-fit: cover;         /* Garante que a imagem seja cortada para caber sem distorção */
+    border-radius: 8px;        /* Bordas arredondadas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
+}
+
+/* Efeito hover */
+.img-fluid:hover {
+    transform: scale(1.05);    /* Aplica um zoom suave (5% maior) */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Aumenta a intensidade da sombra */
+}
+
 
 
 .btn {
@@ -206,182 +203,128 @@ body {
     transform: scale(1.05);
 }
 
-.projetos {
-    background: linear-gradient(135deg, #f8f8f8 0%, #e0e0e0 100%);
-    padding: 4rem 0;
+
+#sobre-nos {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    padding: 3rem 1.5rem; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas para suavizar a seção */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.projetos h2 {
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 2rem;
+#sobre-nos h2 {
+    font-size: 2.5rem; /* Tamanho grande para destaque */
+    font-weight: 700; /* Título em negrito */
+    color: #333; /* Cor escura para contraste */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    text-transform: uppercase; /* Título em letras maiúsculas */
 }
 
-.card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+#sobre-nos p.lead {
+    font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
+    color: #555; /* Cor cinza suave */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    margin-bottom: 2rem; /* Espaço abaixo do parágrafo */
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+#sobre-nos .btn {
+    background-color: #fc9a2b; /* Cor principal do botão */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    padding: 0.75rem 2rem; /* Espaçamento interno do botão */
+    font-size: 1.2rem; /* Tamanho do texto do botão */
+    font-weight: 600; /* Negrito no botão */
+    border-radius: 50px; /* Bordas arredondadas no botão */
+    transition: all 0.3s ease; /* Animação suave para interações */
 }
 
-.card-body {
-    padding: 1.5rem;
+#sobre-nos .btn:hover {
+    background-color: #c97b21; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom leve */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
 }
 
-.img-fluid {
-    border-radius: 15px 15px 0 0;
-}
-
-#missao-visao-valores {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-#missao-visao-valores .card {
-    flex: 1;
-    margin: 0;
-    border: none;
-    padding: 2rem;
-    height: 100%;
-    background: #ffffff;
-    color: #333;
-}
-
-#missao-visao-valores .card-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-#missao-visao-valores .card-text {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.contato {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-form {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #fc9a2b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button[type="submit"]:hover {
-    background-color: #fc9a2b;
-}
 
 #contato {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    width: 50%;
-    margin: 0 auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Fundo claro */
+    padding: 1rem 1rem; /* Reduzi o padding */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 0 auto; /* Centraliza a seção */
+    max-width: 800px; /* Limita a largura máxima */
 }
 
 #contato h2 {
+    font-size: 2.5rem; /* Tamanho grande */
+    font-weight: bold;
+    color: #333; /* Cor escura */
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin: 2rem 0 1rem; /* Aumenta o espaço superior */
+    text-transform: uppercase; /* Letras maiúsculas */
 }
 
-form p {
-    margin-bottom: 15px;
+
+
+
+#contato form {
+    background-color: #ffffff; /* Fundo do formulário */
+    padding: 2rem; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+#contato .form-group {
+    margin-bottom: 1.5rem; /* Espaçamento entre campos */
 }
 
-button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #fc9a2b;
-    color: white;
-    border: none;
-    border-radius: 5px;
+#contato label {
+    font-size: 1rem; /* Tamanho do texto do rótulo */
+    color: #333; /* Cor escura */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem; /* Espaço abaixo do rótulo */
+}
+
+#contato input,
+#contato textarea {
+    width: 100%; /* Largura total */
+    padding: 0.75rem; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho do texto */
+    color: #333; /* Texto escuro */
+    background-color: #f9f9f9; /* Fundo claro */
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    border-color: #fc9a2b; /* Borda destacada */
+    box-shadow: 0px 0px 8px rgba(252, 154, 43, 0.5); /* Sombra destacada */
+    outline: none; /* Remove a borda padrão */
+}
+
+#contato button {
+    background-color: #fc9a2b; /* Cor principal */
+    color: #ffffff; /* Texto branco */
+    border: none; /* Remove borda */
+    padding: 0.75rem 2rem; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho do texto */
+    font-weight: bold;
+    border-radius: 50px; /* Bordas arredondadas */
+    text-transform: uppercase; /* Letras maiúsculas */
     cursor: pointer;
-    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: all 0.3s ease-in-out; /* Transição suave */
 }
 
-button[type="submit"]:hover {
-    background-color: #fc9a2b;
-}
-.footer {
-    background: #333;
-    color: #fff;
-    padding: 1.5rem 0;
-    text-align: center;
+#contato button:hover {
+    background-color: #c97b21; /* Cor mais escura */
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
 }
 
-.social-media a {
-    color: #fc9a2b;
-    margin: 0 0.5rem;
-    text-decoration: none;
-}
 
-.social-media a:hover {
-    color: #fc9a2b;
-}
-
-.hero-text,
-.service-card,
-.project-item {
-    width: 100%;
-}
-
-.service-cards,
-.project-gallery {
-    flex-direction: column;
-    align-items: center;
-}
-.bg-custom {
-    background-color: #333; /* Substitua pelo código da cor desejada */
-}
 .success-message {
     color: #28a745;
     font-weight: bold;
@@ -392,14 +335,6 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 
-#projetos .card {
-    transition: transform 0.3s ease-in-out;
-    width: 100%;
-}
-
-#projetos .card:hover {
-    transform: scale(1.05);
-}
 
 
 .whatsapp-float {
@@ -463,25 +398,44 @@ a:active {
     color: #fc9a2b;
 }
 
-#projetos .col-md-4 {
-    max-width: 33%;
-    flex: 1 0 33%;
-    margin-bottom: 1rem;
+
+#footer {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    padding: 2rem 1rem; /* Espaçamento interno */
+    border-top: 5px solid #fc9a2b; /* Linha decorativa na parte superior */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
 }
 
-@media (max-width: 768px) {
-    #projetos .col-md-4 {
-        max-width: 100%;
-        flex: 1 0 100%;
-    }
-
-    .carousel-item {
-        height: 300px;
-    }
+#footer .footer-title {
+    font-size: 1.8rem; /* Tamanho do título */
+    font-weight: bold; /* Texto em negrito */
+    color: #fc9a2b; /* Cor de destaque */
 }
-@media (max-width: 768px) {
-    h2.display-4 {
-        font-size: 24px; /* Ajuste o tamanho da fonte para telas menores */
-        margin: 8px; /* Ajuste as margens conforme necessário */
-    }
+
+#footer ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+#footer ul li {
+    font-size: 1rem; /* Tamanho do texto */
+    margin-bottom: 0.5rem; /* Espaço entre itens */
+}
+
+#footer ul li a {
+    color: #fc9a2b; /* Links com cor de destaque */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer ul li a:hover {
+    color: #fff; /* Muda para branco no hover */
+}
+
+#footer p {
+    font-size: 0.9rem; /* Tamanho menor para o texto de direitos autorais */
+    color: #ccc; /* Texto de rodapé mais claro */
+    margin-top: 1.5rem;
 }
